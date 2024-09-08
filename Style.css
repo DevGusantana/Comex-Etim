@@ -1,0 +1,213 @@
+/* PADRÃO GERAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+/*MAIN*/
+
+header{
+    background-image: url('img/Header-img.png');
+    color: #fff;
+    padding:25px 4%;
+}
+
+.layout{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo{
+    text-align: center;
+}
+
+header a h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.menu{
+    text-align: center;
+    font-size: 18px;
+}
+
+header a{
+    color: #858585;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+main{
+    background-color: #fff;
+    padding: 20px 4%;;
+}
+
+section h1{
+    padding: 15px 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+section p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.img{
+    text-align: center;
+    margin: 40px 2%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*PLATAFORMA DE CRIAÇÃO PARA O E-COMMERCE*/
+
+.link{
+    text-align: center;
+    display: flex;
+}
+
+.link img{
+    text-align: center;
+    margin: 10px 2%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.link button{
+    margin:10px 2%
+}
+
+.B-Saiba-Mais button{
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1e0a4b;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    color: #fff;
+}
+
+.B-Saiba-Mais button:hover{
+    box-shadow: 0px 0px 10px #000000c2;
+    transform: scale(1.07);
+}
+
+
+/*SITES DE COMÉRCIOS GRATUITOS, PAGOS E PARCERIAS*/
+
+.container {
+  display: flex;
+  justify-content: center; /* Alinha no centro */
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+}
+
+/* Estilos existentes para os cards e animação */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin:20px 5%;
+}
+
+.card {
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.animation {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform .6s ease;
+}
+
+.animation:hover {
+    transform: rotateY(180deg);
+}
+
+.frente, .tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frente {
+    background-size: cover;
+    z-index: 2;
+}
+
+.tras {
+    background-color: #000;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.tras button {
+    padding: 10px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    color: #10006d;
+}
+
+.tras button:hover {
+    box-shadow: 0px 0px 10px #ffffff;
+    transform: scale(1.07);
+}
+
